@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>My First Multicolumn Webpage</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Lora|Roboto');
+
+        body {
+            line-height: 1.5;
+            background-color: #5B5553; 
+            font-family: "Roboto";
+            color: #2E2A26;
+            margin: 0;
+        }
+
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        #wrapper {
+            width: 80.56640625%; /* 825/1024 */
+            margin: 0 auto;
+            background-color:#E5E5E5;
+        }
+
+        p {
+            margin:2.5% 0;
+        }
+
+        h1, h2, h3 {
+            margin: 2% 0;
+            font-family: "Lora";
+            color: #243746;
+        }
+
+        header, footer, nav {
+            background-color: #1C2B36;
+            padding: 2% 7.216666666666667%;
+            color: #D8C9A3;
+        }
+
+        header h1 {
+            color: #D8C9A3;
+        }
+
+        header h2 {
+            color: #C0A96B;
+        }
+
+        header a {
+            color: #C0A96B;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #E6D6AE;
+			background-color:#B1A7A5;
+			padding:3%;
+        }
+
+        nav {
+			background-color:#B1A7A5;
+			padding:1% 0;
+			
+        }
+		nav ul{
+			width:85.57575757575758%;
+			margin:0 auto;
+		}
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 2%;
+            background-color: #4B5D3A;
+            padding: 1% 2%;
+            border: 1px solid #2E3A24;
+        }
+
+        li.nav-item a:link {
+            color: #F3EBD8;
+            text-decoration: none;
+        }
+
+        li.nav-item a:visited {
+            color: #D6C7A1;
+        }
+
+        li.nav-item a:hover {
+            color: #C0A96B;
+        }
+
+        li.nav-item a:active {
+            color: #8C2F39;
+        }
+
+        #feature {
+            width: 81.32575757575758%;
+            margin:3% auto 4% auto;
+            overflow: hidden;
+            padding: 1.5% 2.25% 3.5% 2.25%;
+            background-color:#B1A7A5;
+        }
+
+        .feature-image {
+            float: left;
+            width: 40%;
+            display: block;
+        }
+
+        .feature-text {
+            float: left;
+            width: 58%;
+            margin-left: 2%;
+        }
+
+        #main-content {
+            width: 59.39393939393939%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        figure {
+            background-color: #B7B1A1;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .main-figure {
+            width: 32.50478011472275%; /* 170/523 */
+            margin-right: 9.56022944550669%; /* 50/523 */
+            float: right;
+        }
+
+        #sidebar {
+            width: 32.60606060606061%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        .side-figure {
+            width: 88.0794701986755%; /* 266/302 */
+            margin: 0 auto;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            color: #D8C9A3;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-family: "Lora";
+            line-height: 1.5em;
+            margin: 4% 0 4% 6%;
+            background-color: #6A5E4D;
+            padding: 2%;
+            border-left: 10px solid #C0A96B;
+            color: #F3EBD8;
+        }
+
+        blockquote:before {
+            vertical-align: -0.35em;
+            line-height: 0;
+            font-size: 4em;
+            content: "\201C";
+            color: #D8C9A3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>Guy Ritchie Discography</h1>
+            <h2>
+                <a href="https://www.theguardian.com/film/2021/mar/01/hear-me-out-king-arthur-legend-of-the-sword">King Arthur</a>
+            </h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">Link to page 1</a></li>
+                <li class="nav-item"><a href="final3.html">Link to page 3</a></li>
+                <li class="nav-item"><a href="final4.html">Link to page 4</a></li>
+                <li class="nav-item"><a href="final5.html">Link to page 5</a></li>
+            </ul>
+        </nav>
+
+        <div id="feature">
+            <h2>The Rise Of A King</h2>
+            <img class="feature-image" src="finalpic3.2.jpg" alt="king Aurther feature image" />
+            <p class="feature-text">
+               There are street chases, kung-fu fights, magic spells, Game of Thrones-y intrigues, uncouth Vikings, venom-induced trip scenes. 
+			   There are gigantic war elephants swinging wrecking balls with their trunks and carrying pyramids full of soldiers on their backs
+            </p>
+        </div>
+
+        <div id="main-content">
+            <article>
+                <h2>The New King</h2>
+
+                <figure class="main-figure">
+                    <img src="finalpic3.2.jpg" alt="Picture of Sherlock" />
+                    <figcaption>This is a picture about Sherlock.</figcaption>
+                </figure>
+
+                <h3>Is it A Bad Movie</h3>
+                <p>
+                    The catastrophic box office performance and scathing reviews might have given it away, but Guy Ritchie’s King Arthur: 
+					Legend of the Sword is not the greatest movie ever made. It’s not even the greatest King Arthur movie ever made: for me,
+					nothing will ever beat John Boorman’s Excalibur, although at least Clive Owen’s 2004 version is easily the worst. In its defence, Legend of the Sword is lively, spectacular, ridiculous and splurges an enormous budget – which is never a dull thing to watch. But beyond that, I put it to you, ladies and gentlemen of the jury, that Legend of the Sword is one of the most important movies about British identity of the past decade. 
+					In retrospect, it was a brave, ultimately futile, last stand against the sweeping tide of Brexit nationalism.
+                </p>
+
+                <h3>The Gist:</h3>
+                <p>
+					King Arthur isn’t just any old story; it is one of those foundational myths of English identity that make you groan whenever you hear someone’s doing a new version 
+					– like Robin Hood or Sherlock Holmes or Winston Churchill. (Next up is Dev Patel in David Lowery’s delayed Arthurian head-trip 
+					The Green Knight, and even as we speak, news is breaking that Zack Snyder is working on a “faithful” King Arthur retelling). 
+					Arthur’s re-emergence at a time of national upheaval, less than a year after the Brexit referendum, was almost inevitable. How Guy Ritchie would refashion the story was equally inevitable:
+					this Arthur, played by Charlie Hunnam, is a street-smart wide boy to be found ducking, diving and exchanging blokey bantz with the low-lifes of old Londinium taaaaan. His mates have nicknames like Wet Stick, Back Lack and Goosefat Bill. Yep, he totally Ritchies it up.
+
+
+                </p>
+				
+				<p>
+					Legend of the Sword is also a total mess, which is brilliant. It borrows from all manner of stuff, and chucks it all on the screen like a nonchalant plasterer. Bish! Have some quasi-biblical myth-making (baby Arthur is sent down the river in a basket). Bash! Have some epic Lord of the Rings-style battle scenes.
+					Bosh! Now here’s some do-me-a-favour-guv, Only Fools and Horses-style wheeler-dealing. There are street chases, kung-fu fights, magic spells, Game of Thrones-y intrigues, uncouth Vikings, venom-induced trip scenes. There are gigantic war elephants swinging wrecking balls with their trunks and carrying pyramids full of soldiers on their backs. There’s a historian banging their head against a castle wall. Oh no, that’s a deleted scene. The action scenes seek to deploy every special effect at once: rapid-fire editing, bullet time, extreme closeup,
+					that thing where everything slows right down then speeds back up again – it’s exhilarating, poetic even.
+                
+                    Orphaned, ejected from his noble home and raised in a brothel, this Arthur must regain his rightful place on England’s throne through a combination of courage, teamwork, magic and slo-mo swordfighting. His usurper is the evil Vortigern, a sneering, snarling pantomime baddie played to the hilt by Jude Law. 
+					Having played second fiddle to Robert Downey Jr in Ritchie’s Sherlock Holmes, Law’s teeth get the scenery all to themselves here. By contrast, Hunnam is a bit of a weak link. Sure, he’s ripped of torso and fashionable of haircut, but not much in the presence department. Even in his big, sword-in-the-stone moment, he’s upstaged by a distracting cameo from David Beckham (“’ands on the ’ilt, stupid”). 
+					Then again, Boorman’s Excalibur also had a pretty forgettable Arthur and that wasn’t a problem (Nigel Terry – saved you a Google).
+                </p>
+
+                <blockquote>
+                    You wanted to know what gave me such drive. It was you. You put me in that brothel. You cut me on the streets. I am here now because of you. You created me. And for that, I bless you"
+                </blockquote>
+
+                <h3>Our Take:</h3>
+                <p>
+                    Beneath all the mess, though, perhaps Legend of the Sword was trying to tell us something. This is a feudal Britain,
+					ruled by a despotic king and his loyal barons – slave-owning descendants of “the old families of England”. Against him, Arthur assembles a commendably multicultural resistance force. There is a mystical Mediterranean witch (Astrid Bergès-Frisbey). Arthur’s chief accomplice, Sir Bedivere, is played by the ever-commanding Djimon Honsou. His ragtag gang of geezers features other non-white faces, including Kingsley Ben-Adir (recently seen as Malcolm X in One Night In Miami), and Daniel Wu as a Chinese martial artist by the name of, er, Kung Fu George. Stuff like Bridgerton is currently being praised 
+					to the rafters for putting actors of colour into British period drama, but where was the love when Legend of the Sword did it?
+                </p>
+            </article>
+        </div>
+
+        <div id="sidebar">
+            <article>
+                <h2>All In All</h2>
+				
+					
+
+					
+                <figure class="side-figure">
+                    <img src="finalpic3.jpg" alt="Show Cover" />
+                    <figcaption>This is a cover picture of the movie.</figcaption>
+                </figure>
+
+                <p>
+                   At the film’s conclusion, this united nations of outcasts and lower-class scum overthrow the rural elites and establish a new social order. The ragtag geezers are knighted, the Round Table is under construction, and the newly crowned Arthur even restores diplomatic relations with the uncouth Vikings and invites them to dinner. “Why have enemies when you can have friends?” he says. Tariff-free trading is surely just around the corner. Admittedly by this stage Legend of the Sword has forgotten it’s supposed to be about King Arthur and morphed into a Robin Hood movie, but its vision for Britain is at least equitable, inclusive and outward-looking.
+
+Legend of the Sword was supposed to be the opener for a six-part franchise, but, as with the era of pan-European cooperation the movie optimistically sets up, it was never to be. You could blame Ritchie and Hunnam, you could blame Brexit, or you could look in the mirror and blame yourself. Its failure is our failure.
+                </p>
+
+            </article>
+        </div>
+
+        <footer>© 2026 Ikra Aden</footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>My First Multicolumn Webpage</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Lora|Roboto');
+
+        body {
+            line-height: 1.5;
+            background-color: #5B5553; 
+            font-family: "Roboto";
+            color: #2E2A26;
+            margin: 0;
+        }
+
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        #wrapper {
+            width: 80.56640625%; /* 825/1024 */
+            margin: 0 auto;
+            background-color:#E5E5E5;
+        }
+
+        p {
+            margin:2.5% 0;
+        }
+
+        h1, h2, h3 {
+            margin: 2% 0;
+            font-family: "Lora";
+            color: #243746;
+        }
+
+        header, footer, nav {
+            background-color: #1C2B36;
+            padding: 2% 7.216666666666667%;
+            color: #D8C9A3;
+        }
+
+        header h1 {
+            color: #D8C9A3;
+        }
+
+        header h2 {
+            color: #C0A96B;
+        }
+
+        header a {
+            color: #C0A96B;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #E6D6AE;
+			background-color:#B1A7A5;
+			padding:3%;
+        }
+
+        nav {
+			background-color:#B1A7A5;
+			padding:1% 0;
+			
+        }
+		nav ul{
+			width:85.57575757575758%;
+			margin:0 auto;
+		}
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 2%;
+            background-color: #4B5D3A;
+            padding: 1% 2%;
+            border: 1px solid #2E3A24;
+        }
+
+        li.nav-item a:link {
+            color: #F3EBD8;
+            text-decoration: none;
+        }
+
+        li.nav-item a:visited {
+            color: #D6C7A1;
+        }
+
+        li.nav-item a:hover {
+            color: #C0A96B;
+        }
+
+        li.nav-item a:active {
+            color: #8C2F39;
+        }
+
+        #feature {
+            width: 81.32575757575758%;
+            margin:3% auto 4% auto;
+            overflow: hidden;
+            padding: 1.5% 2.25% 3.5% 2.25%;
+            background-color:#B1A7A5;
+        }
+
+        .feature-image {
+            float: left;
+            width: 40%;
+            display: block;
+        }
+
+        .feature-text {
+            float: left;
+            width: 58%;
+            margin-left: 2%;
+        }
+
+        #main-content {
+            width: 59.39393939393939%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        figure {
+            background-color: #B7B1A1;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .main-figure {
+            width: 32.50478011472275%; /* 170/523 */
+            margin-right: 9.56022944550669%; /* 50/523 */
+            float: right;
+        }
+
+        #sidebar {
+            width: 32.60606060606061%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        .side-figure {
+            width: 88.0794701986755%; /* 266/302 */
+            margin: 0 auto;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            color: #D8C9A3;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-family: "Lora";
+            line-height: 1.5em;
+            margin: 4% 0 4% 6%;
+            background-color: #6A5E4D;
+            padding: 2%;
+            border-left: 10px solid #C0A96B;
+            color: #F3EBD8;
+        }
+
+        blockquote:before {
+            vertical-align: -0.35em;
+            line-height: 0;
+            font-size: 4em;
+            content: "\201C";
+            color: #D8C9A3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>Guy Ritchie Discography</h1>
+            <h2>
+                <a href="https://www.theguardian.com/film/2021/may/06/wrath-of-man-guy-ritchie-jason-statham">Wrath Of A Man</a>
+            </h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="final2.html">Link to page 2</a></li>
+                <li class="nav-item"><a href="final3.html">Link to page 3</a></li>
+                <li class="nav-item"><a href="final4.html">Link to page 4</a></li>
+                <li class="nav-item"><a href="final5.html">Link to page 5</a></li>
+            </ul>
+        </nav>
+
+        <div id="feature">
+            <h2>Living For Closure</h2>
+            <img class="feature-image" src="WOM2.jpg" alt="Movie feature image" />
+            <p class="feature-text">
+               
+            </p>
+        </div>
+
+        <div id="main-content">
+            <article>
+                <h2>Family First</h2>
+
+                <figure class="main-figure">
+                    <img src="WOM2.jpg" alt="Picture of Wrath Of A Man" />
+                    <figcaption>This is a picture about Warth Of A Man.</figcaption>
+                </figure>
+
+                <h3>Is it A Bad Movie</h3>
+                <p>
+                    The making of Jason Statham, from wheeler-dealer to swimmer to model to actor to movie star, is owed in rather 
+					overwhelmingly large part to writer-director Guy Ritchie, who plucked him out of a French Connection campaign and into his first two films. Magnetic turns in Lock, Stock and Two Smoking Barrels and Snatch paved the way for an unlikely yet robust career as a throwback action antihero, punching, shooting and wisecracking his way from DTV fare all the way up to blockbusting franchises. At the same time, Ritchie had made a similar leap, away from the laddish gangster capers that made him and instead, taking charge of studio tentpoles like 
+					The Man from Uncle, King Arthur and Sherlock Holmes, two boys done good, at least when it came to their bank balances.
+                </p>
+				
+				<p>
+					But the simultaneously steep ascents came at a price. Statham’s shtick, often brilliantly 
+					subverted for comic effect (see: Spy), was also wearing thin when broadened out (see: The Meg), 
+					while Ritchie’s initial vigor had dulled with each project bigger than the last, with the 
+					anyone-could-have-directed-this anonymity of Aladdin feeling like a tipping point. His follow-up, 2020’s uneven comedy The Gentlemen, was an attempt to revisit former glories yet with a slicker skillset, and there’s a similar marriage of grit and gloss with his latest, bullish action thriller Wrath of Man, 
+					reuniting him with the Stath, an actor in need of more distinctive and distinguished direction.
+               </p>
+				
+				<p>
+					It’s therefore an apt time for them to be working together again and, while a bit threadbare,
+					the film acts as a jolting return to form for them both, a propulsive exploitation pic that
+					should also continue a winning streak of crowd-alluring B-movies that have helped US cinemas crawl back to normality in the last month. The giddy thrills of Godzilla vs Kong and the silly schlock of Mortal Kombat have both hit big, proving that audiences will return en masse if there’s a visceral reason for them to do so. There should be a similar roar of approval meeting Wrath of Man, a refreshing reminder of what a real movie actually looks like after over
+					a year of flatly produced streaming guff, especially noticeable within the action genre.
+                </p>
+
+                <blockquote>
+					"I can do in two weeks what others can in 20 years." — H 
+                </blockquote>
+
+                 <p>
+					It’s a remake of the 2004 French film Cash Truck, telling a simple story in an often overly convoluted way,
+					as if Tarantino was tasked with structuring a Liam Neeson thriller. A mysterious new employee,
+					known as H (Statham) starts working for an armed vehicle company, transporting money and goods from 
+					one place to the other, a job that he’s quickly told makes him less predator and more prey. But after H disrupts an attempted robbery, killing all those who dared in the process, it becomes clear that he’s not just some hired hand. H has a mission, an avenging angel whose son was murdered by a gunman whose name he’s still searching for,
+					a bloody, single-minded quest that’s about to bring hell to the streets of Los Angeles.
+                </p>
+            </article>
+        </div>
+
+        <div id="sidebar">
+            <article>
+                <h2>All In All</h2>
+				
+					
+
+					
+                <figure class="side-figure">
+                    <img src="WOM1.jpg" alt="Show Cover" />
+                    <figcaption>This is a cover picture of the movie.</figcaption>
+                </figure>
+
+                <p>
+					Despite its biblical title, two-hour length, unconventional timeline and laughably high-minded
+					chapter breaks, Wrath of Man is actually far more pedestrian that Ritchie seems to think it is, 
+					akin to most other January action movies released post-Taken (it was in fact originally scheduled
+					for that very month), a sturdy, violent and formulaic piece of pulp that works in the moment but fades soon after. It’s a fairly straightforward story of revenge, of a father striking back against those who harmed his family, a tale as old as time, albeit told with more effectiveness than usual. There’s a confident swagger to it, but also a refreshing lack of smugness, Ritchie choosing to mostly avoid knowing comic touches and focus on the unfurling, furious horror of it all,
+					amped up by Christopher Benstead’s dark, dominant score and Jimmy Boyle’s unsettling sound design.
+                </p>
+
+            </article>
+        </div>
+
+        <footer>© 2026 Ikra Aden</footer>
+
+    </div>
+</body>
+</html>

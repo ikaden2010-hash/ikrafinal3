@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>My First Multicolumn Webpage</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Lora|Roboto');
+
+        body {
+            line-height: 1.5;
+            background-color: #5B5553; 
+            font-family: "Roboto";
+            color: #2E2A26;
+            margin: 0;
+        }
+
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        #wrapper {
+            width: 80.56640625%; /* 825/1024 */
+            margin: 0 auto;
+            background-color:#E5E5E5;
+        }
+
+        p {
+            margin:2.5% 0;
+        }
+
+        h1, h2, h3 {
+            margin: 2% 0;
+            font-family: "Lora";
+            color: #243746;
+        }
+
+        header, footer, nav {
+            background-color: #1C2B36;
+            padding: 2% 7.216666666666667%;
+            color: #D8C9A3;
+        }
+
+        header h1 {
+            color: #D8C9A3;
+        }
+
+        header h2 {
+            color: #C0A96B;
+        }
+
+        header a {
+            color: #C0A96B;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #E6D6AE;
+			background-color:#B1A7A5;
+			padding:3%;
+        }
+
+        nav {
+			background-color:#B1A7A5;
+			padding:1% 0;
+			
+        }
+		nav ul{
+			width:85.57575757575758%;
+			margin:0 auto;
+		}
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 2%;
+            background-color: #4B5D3A;
+            padding: 1% 2%;
+            border: 1px solid #2E3A24;
+        }
+
+        li.nav-item a:link {
+            color: #F3EBD8;
+            text-decoration: none;
+        }
+
+        li.nav-item a:visited {
+            color: #D6C7A1;
+        }
+
+        li.nav-item a:hover {
+            color: #C0A96B;
+        }
+
+        li.nav-item a:active {
+            color: #8C2F39;
+        }
+
+        #feature {
+            width: 81.32575757575758%;
+            margin:3% auto 4% auto;
+            overflow: hidden;
+            padding: 1.5% 2.25% 3.5% 2.25%;
+            background-color:#B1A7A5;
+        }
+
+        .feature-image {
+            float: left;
+            width: 40%;
+            display: block;
+        }
+
+        .feature-text {
+            float: left;
+            width: 58%;
+            margin-left: 2%;
+        }
+
+        #main-content {
+            width: 59.39393939393939%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        figure {
+            background-color: #B7B1A1;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .main-figure {
+            width: 32.50478011472275%; /* 170/523 */
+            margin-right: 9.56022944550669%; /* 50/523 */
+            float: right;
+        }
+
+        #sidebar {
+            width: 32.60606060606061%;
+            float: left;
+            padding: 2%;
+            box-sizing: border-box;
+			margin:0 2%;
+        }
+
+        .side-figure {
+            width: 88.0794701986755%; /* 266/302 */
+            margin: 0 auto;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            color: #D8C9A3;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-family: "Lora";
+            line-height: 1.5em;
+            margin: 4% 0 4% 6%;
+            background-color: #6A5E4D;
+            padding: 2%;
+            border-left: 10px solid #C0A96B;
+            color: #F3EBD8;
+        }
+
+        blockquote:before {
+            vertical-align: -0.35em;
+            line-height: 0;
+            font-size: 4em;
+            content: "\201C";
+            color: #D8C9A3;
+        }
+		
+		table{
+			background-color:#E5E5E5;
+			border:2px solid #C9A227;
+			width:100%;
+			border-collapse:collapse;
+		}
+
+		th{
+			background-color:#1C2B36;
+			color:#D8C9A3;
+			padding:10px;
+			font-family:"Lora";
+		}
+
+		tbody{
+			background-color:#F5F1E6;
+			color:#30364F;
+			font-family:"Roboto";
+		}
+
+		td{
+			padding:8px;
+			border:1px solid #C9A227;
+		}
+
+		tfoot{
+			background-color:#B1A7A5;
+			color:#1C2B36;
+			font-style:italic;
+		}
+
+		caption{
+			font-family:"Lora";
+			font-size:18px;
+			font-weight:bold;
+			color:#243746;
+			margin-bottom:10px;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>Guy Ritchie Discography</h1>
+            <h2>
+                <a href="https://www.theguardian.com/film/2019/may/22/aladdin-review-live-action-remake-will-smith-guy-ritchie">The Ministry Of Ungentlemanly Warfare</a>
+            </h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">Link to page 1</a></li>
+                <li class="nav-item"><a href="final2.html">Link to page 2</a></li>
+                <li class="nav-item"><a href="final4.html">Link to page 4</a></li>
+                <li class="nav-item"><a href="final5.html">Link to page 5</a></li>
+            </ul>
+        </nav>
+
+        <div id="feature">
+            <h2>The Ministry Of Ungentlemanly Warfare</h2>
+            <img class="feature-image" src="WU3.jpg" alt="An Ungentlemanly feature image" />
+            <p class="feature-text">
+				The story itself is based on Winston Churchill’s personal files that were declassified in 2016. And it’s revealed during the credits that the real March-Phillips was the inspiration for Ian Fleming’s iconic superspy James Bond. Fleming himself was a British Naval Intelligence officer during the events of this film and plays a minor role here.
+
+            </p>
+        </div>
+
+        <div id="main-content">
+            <article>
+                <h2>The Ministry Of Ungentlemanly Warfare</h2>
+
+                <figure class="main-figure">
+                    <img src="WU3.jpg" alt="Picture of The Ministry Of Ungentlemanly Warfare" />
+                    <figcaption>This is a picture about The Ministry Of Ungentlemanly Warfare.</figcaption>
+                </figure>
+
+                <h3>Movie Review</h3>
+                <p>
+                    It’s WWII, and German forces certainly seem to have the upper hand. They’re sweeping through Europe like a hot knife through butter. And they rule the seas. Anyone who even attempts to ship munitions or supplies to a beleaguered England is quickly sunk to the bottom of the Atlantic by a wily U-boat pack.
+
+					In fact, the situation is so dire that the British Parliament and its military leaders are ready to accept Hitler’s demands. And so they approach Prime Minister Winston Churchill to officially capitulate.
+                </p>
+
+                
+                <p>
+					But Churchill isn’t a bulldog who readily throws in the towel. In fact, he’d rather give it a thorough chew first. And there’s one slim possibility for England to prevail: They just need to break the rules a bit.
+
+					Churchill authorizes a seasoned and currently jailed rule-breaker, Gus March-Phillips, to pull together a team of highly skilled, unruly soldiers to head off on a secret mission. They’ll slip into a neutral port in Africa and take out a ship that delivers vital supplies to the Nazi fleet of submarines.
+
+					Take that supply chain out, and Britian might just be able to create enough space for American ships to bring the help and supplies the desperately isolated country so urgently needs.
+
+                </p>
+				
+				<p>
+					Of course, espionage and military destruction carried out in a neutral nation flies in the face of International laws and agreements. And the British officials calling for surrender will scream to high heaven if they find out what Churchill is planning.
+
+					But frankly, Nazi Germany has been flaunting its disregard for the laws of independent nations for some time now. And if Hitler isn’t going to play by the gentlemanly rules of war … then neither will Churchill.
+
+					He can only hope this March-Phillips fellow is as deviously ungentlemanly as they say he is.
+                </p>
+
+                <blockquote>
+					A team is needed for a mission, and they will be a group of individuals who are considered mad."
+                </blockquote>
+
+                
+            </article>
+			<table>
+    <caption>The Ministry of Ungentlemanly Warfare Characters</caption>
+
+    <thead>
+        <tr>
+            <th colspan="4">The Ministry of Ungentlemanly Warfare Overview</th>
+        </tr>
+        <tr>
+            <th>Character</th>
+            <th>Actor</th>
+            <th>Role in Mission</th>
+            <th>Skill</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Gus March-Phillips</td>
+            <td>Henry Cavill</td>
+            <td>Leader of the secret British operation</td>
+            <td>Strategy & Combat</td>
+        </tr>
+
+        <tr>
+            <td>Geoffrey Appleyard</td>
+            <td>Alex Pettyfer</td>
+            <td>Elite soldier assisting the mission</td>
+            <td>Sniper & Tactics</td>
+        </tr>
+
+        <tr>
+            <td>Marjorie Stewart</td>
+            <td>Eiza González</td>
+            <td>Undercover agent supporting the team</td>
+            <td>Espionage</td>
+        </tr>
+
+        <tr>
+            <td>Freddie Alvarez</td>
+            <td>Henry Golding</td>
+            <td>Special operations fighter</td>
+            <td>Close-combat</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">The film follows a secret British during World War II.</td>
+        </tr>
+    </tfoot>
+</table>
+        </div>
+
+        <div id="sidebar">
+            <article>
+                <h2>Conclusion</h2>
+				
+					
+
+					
+                <figure class="side-figure">
+                    <img src="UW1.jpg" alt="Show Cover" />
+                    <figcaption>This is a cover picture of the movie.</figcaption>
+                </figure>
+
+                <p>
+					Early on in The Ministry of Ungentlemanly Warfare, Henry Cavill’s character, Gus March-Phillips, encourages his small band of seasoned battlers as they prepare to carve their way through a German camp filled with soldiers. “Remember gentlemen,” he grins, “try to have fun!”
+
+					And that’s precisely what director Guy Ritchie does with this war film as a whole. Yes, there’s actual history in the mix: a true story of secret WWII espionage, heroes and gritty bravery. But it’s cocooned in a thick, bubble-wrap layer of breezy action and winking, Hollywood-style bravado.
+
+					That’s not to say that this pic isn’t fun. It’s buoyed by likeable characters and a sardonic script. However, there’s the warfare part of the title to be aware of, too.
+
+					Ungentlemanly Warfare’s visceral stabbing, riddling, slashing, exploding and chop-‘em-with-an-axe bloodletting will undoubtedly leave some quailing. And there are a couple of coarse language bombs dropped along the way as well.
+
+					In closing, let’s just say I certainly wouldn’t recommend that youthful family members use this film as background research for a school history paper.
+                </p>
+				
+
+            </article>
+			
+			
+        </div>
+
+        <footer>© 2026 Ikra Aden</footer>
+
+    </div>
+</body>
+</html>
